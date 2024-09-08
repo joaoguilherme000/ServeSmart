@@ -1,0 +1,119 @@
+
+body {
+  font-family: 'Lacquer', sans-serif;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  background-image: url(../../assets/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  display: flex;
+  flex-direction: row;
+}
+
+section {
+  background-color: rgba(0, 0, 0, 0.652);
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  flex: 1;
+}
+
+.side {
+  flex: 0.231;
+  background-image: url(../../assets/side.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0;
+	padding: 0;
+}
+
+.novo {
+  display: flex;
+  height: 6vh;
+}
+
+.novo h1{
+  font-size: 3vh;
+  text-align: center;
+  display: inline;
+  padding: 1.2vh 10vh;
+  cursor: pointer;
+  border-radius: 0.8vh;
+  background-color: #D0E3EC;
+}
+
+.upper {
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+}
+
+.input-cliente {
+  border: 2px red solid;
+  flex: 1;
+}
+
+.preparando {
+  border: 2px red solid;
+  flex: 1;
+}
+
+.pronto {
+  border: 2px red solid;
+  flex: 1;
+}
+
+.sub {
+  height: 28vh;
+}
+
+.menu {
+  height: 54%;
+  margin-bottom: 2.7vh;
+  width: 100%;
+  border-radius: 2vh;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.652);
+}
+
+.list-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D0E3EC;
+  width: 100%;
+  text-align: center;
+  height: 7vh;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.51);
+  cursor: pointer;
+  font-size: 3vh;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.list-side:nth-child(2) {
+  border-top-left-radius: 1vh;
+  border-bottom-left-radius: 1vh;
+}
+.list-side:nth-child(4) {
+  border-top-left-radius: 1vh;
+  border-bottom-left-radius: 1vh;
+}
+.list-side:nth-child(1) {
+  border-top-right-radius: 1vh;
+  border-bottom-right-radius: 1vh;
+}
+.list-side:nth-child(3) {
+  border-top-right-radius: 1vh;
+  border-bottom-right-radius: 1vh;
+}

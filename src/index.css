@@ -8,7 +8,7 @@ body {
   flex-direction: column;
   background-image: url(../assets/back.jpg);
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
   z-index: -1;
 }
 
@@ -50,6 +50,11 @@ body {
   width: 32.2vh;
   padding: 1vh 0.4vh;
   font-size: 3vh;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.menu-item img {
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));
 }
 
 .menu-item:hover {

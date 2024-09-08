@@ -13,7 +13,7 @@
       <h1>bem vindo &nbsp;&nbsp;👋</h1>
     </div>
     <div class="menu">
-      <div class="menu-item">
+      <div class="menu-item" onclick="redirectTo('./pedido/index.html')" id="pedido-item">
           <img src="../assets/pedido.png" alt="Pedido">
           <p>Pedido</p>
       </div>
@@ -34,5 +34,10 @@
           <p>Configurações</p>
       </div>
     </div>
+    <script>
+      function redirectTo(page) {
+          window.location.href = page;
+      }
+    </script>
   </body>
 </html>
