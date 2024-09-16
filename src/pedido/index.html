@@ -16,12 +16,13 @@
 		<div class="upper">
 			<div class="input-cliente">
 				<div class="cliente-nome">
-					<h2>nome:</h2>
+					<h2>nome</h2>
 					<input type="text">
 				</div>
+				<h2 class="title-itens">itens</h2>
 				<div class="itens">
 					<div class="dropdown">
-						<h3>outros</h3>
+						<h3>outros <span class="arrow">&#9662;</span></h3>
 						<div class="dropdown-options">
 							<div class="option">
 								<p href="#">outro</p>
@@ -31,7 +32,7 @@
 						</div>
 					</div>
 					<div class="dropdown">
-						<h3>Pasteis</h3>
+						<h3>Pasteis <span class="arrow">&#9662;</span></h3>
 						<div class="dropdown-options">
 							<div class="option">
 								<p href="#">frango</p>
@@ -53,15 +54,71 @@
 								<div class="menos">&#822;</div>
 								<div class="mais">&#65291;</div>
 							</div>
+							<div class="option">
+								<p href="#">pizza</p>
+								<div class="menos">&#822;</div>
+								<div class="mais">&#65291;</div>
+							</div>
+							<div class="option">
+								<p href="#">pizza</p>
+								<div class="menos">&#822;</div>
+								<div class="mais">&#65291;</div>
+							</div>
+							<div class="option">
+								<p href="#">pizza</p>
+								<div class="menos">&#822;</div>
+								<div class="mais">&#65291;</div>
+							</div>
+							<div class="option">
+								<p href="#">pizza</p>
+								<div class="menos">&#822;</div>
+								<div class="mais">&#65291;</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="preparando">
-				<h3>preparando</h3>
+				<div class="inside">
+					<h3>preparando...</h3>
+					<div class="pedido">
+						<h4>2942</h4>
+						<h4>nome do sujeito</h4>
+					</div>
+					<div class="pedido">
+						<h4>2942</h4>
+						<h4>nome do sujeito</h4>
+					</div>
+					<div class="pedido">
+						<h4>2942</h4>
+						<h4>nome do sujeito</h4>
+					</div>
+					<div class="pedido">
+						<h4>2942</h4>
+						<h4>nome do sujeito</h4>
+					</div>
+				</div>
 			</div>
 			<div class="pronto">
-				<h3>pronto</h3>
+				<div class="inside">
+					<h3>pronto</h3>
+					<div class="pedido">
+						<h4>2942</h4>
+						<h4>nome do sujeito</h4>
+					</div>
+					<div class="pedido">
+						<h4>2942</h4>
+						<h4>nome do sujeito</h4>
+					</div>
+					<div class="pedido">
+						<h4>2942</h4>
+						<h4>nome do sujeito</h4>
+					</div>
+					<div class="pedido">
+						<h4>2942</h4>
+						<h4>nome do sujeito</h4>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="sub">
@@ -72,7 +129,7 @@
 			</div>
 			<div class="second">
 				<h2 class="id-cliente">2952</h2>
-				<div class="itens">
+				<div class="itens-sub">
 					<p>tudo que eu quiser 6 reais</p>
 					<p>tudo que eu quiser 6 reais</p>
 					<p>tudo que eu quiser 6 reais</p>
@@ -97,9 +154,22 @@
 		</div>
 	</div>
     <script>
-		function redirectTo(page) {
+		document.addEventListener('DOMContentLoaded', () => {
+		  function redirectTo(page) {
 			window.location.href = page;
-		}
+		  }
+	  
+		  const dropdowns = document.querySelectorAll('.dropdown');
+	  
+		  // Adiciona um evento de clique para cada dropdown
+		  dropdowns.forEach(dropdown => {
+			const title = dropdown.querySelector('h3');
+			title.addEventListener('click', () => {
+			  // Alterna a classe 'active' para mostrar ou ocultar as opções
+			  dropdown.classList.toggle('active');
+			});
+		  });
+		});
 	</script>
   </body>
 </html>
