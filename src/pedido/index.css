@@ -31,7 +31,7 @@ section {
   justify-content: center;
 }
 
-h1 {
+h1, h2, p{
   margin: 0;
 	padding: 0;
 }
@@ -279,11 +279,6 @@ h1 {
   flex: 1;
 }
 
-.sub {
-  height: 28vh;
-  border: 2px solid ;
-}
-
 .menu {
   height: 100%;
   width: 100%;
@@ -324,4 +319,135 @@ h1 {
 .list-side:nth-child(3) {
   border-top-right-radius: 1vh;
   border-bottom-right-radius: 1vh;
+}
+
+.sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 28vh;
+  border: 1px solid #000000;
+  border-radius: 1vh;
+  background: rgba(217, 217, 217, 0.38);
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0.35;
+}
+
+.first h2 {
+  text-align: center;
+  align-content: center;
+  font-size: 3vh;
+}
+
+.first h2:nth-child(1) {
+  flex: 0.30;
+}
+.first h2:nth-child(2) {
+  flex: 1;
+}
+.first h2:nth-child(3) {
+  flex: 0.25;
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.id-cliente {
+  text-align: center;
+  align-content: center;
+  flex: 0.30;
+}
+
+.itens-sub {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  box-sizing: border-box;
+  flex: 1;
+  max-height: 20vh;
+  font-size: 3vh;
+}
+
+.itens-sub-nome {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-sizing: border-box;
+  flex: 1;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.itens-sub-preco {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-sizing: border-box;
+  flex: 1;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.itens-sub-nome p{
+  text-align: center;
+  align-content: center;
+  flex: 1;
+  min-width: 100%;
+}
+
+.itens-sub-preco p{
+  text-align: center;
+  align-content: center;
+  flex: 1;
+  min-width: 100%;
+}
+
+.valor {
+  text-align: center;
+  flex: 0.25;
+}
+
+.third {
+  display: flex;
+  flex-direction: column;
+  flex: 0.40;
+}
+
+.buttons {
+  flex: 1;
+}
+
+.concluido {
+  align-content: center;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 0.90vh;
+  background-color: #50EA50;
+  height: 5vh;
+}
+
+.mudar {
+  align-content: center;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 0.90vh;
+  background-color: #D0E3EC;
+  height: 5vh;
+}
+
+.cancelar {
+  flex: 0.25;
+  align-content: center;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 0.90vh;
+  background-color: #EA5050;
 }
